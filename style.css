@@ -128,7 +128,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* termina estilos de reseteo */
+
 
 a {
   text-decoration: none;
@@ -138,11 +140,12 @@ a {
 .navbar_logo {
   width: 50px;
 }
+
 .navbar_iconos img {
   width: 50px;
 }
+
 .header {
-  background-image: url();
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -150,6 +153,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -160,7 +164,10 @@ a {
   color: white;
   padding: 27px;
   border-bottom: 2px solid white;
+  z-index: 1;
+  cursor: pointer;
 }
+
 .navbar_list {
   display: flex;
   width: 100%;
@@ -179,14 +186,15 @@ a {
 .navbar_iconos {
   display: flex;
 }
+
 .envoltorio {
-  width: 106px;
+  width: 183px;
   display: flex;
   align-items: center;
 }
 
 .pregunta {
-  color: firebrick;
+  color: white;
   bottom: 44.5rem;
   left: 1228px;
   position: absolute;
@@ -211,12 +219,37 @@ a {
 
 
 .header_content {
-  padding: 4px;
+  padding: 141px;
   color: white;
+  
+
 }
+
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.capa{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+
 .header_content h1 {
   font-size: 50px;
+  
 }
+
 .header_title h1 {
   font-size: 40px;
   padding: 0;
@@ -261,9 +294,7 @@ img {
 }
 
 .header {
-  background-image: url(/Image-cars/bmw-4-series-m440i-xdrive-gran-coupe-onepager-gallery-impressions-wallpaper-02.jpg);
-  height: 100vh;
-  background-size: cover;
+  background-clip:
   background-position: center;
   display: flex;
   flex-direction: column;
